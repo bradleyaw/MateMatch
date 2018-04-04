@@ -178,19 +178,15 @@
                 ]
             }
 
-            $.post("api/friends", friend, function () {
-                //var html = "<h2> Name: " + scoreArr[0].name + "</h2>";
-                //html += "<img src='" + scoreArr[0].photo + "' alt='Match Photo'";
-            })
+            $.post("api/friends", friend)
+            
             $.get("api/friends", function (match) {
                 var less = 41;
-                console.log(match);
                 for (var i = 0; i < match.length - 1; i++) {
                     var sum = 0;
                     for (var j = 0; j < match[i].scores.length; j++) {
                         sum += Math.abs(friend.scores[j] - match[i].scores[j]);
                     }
-                    console.log(sum)
                     if (sum <= less) {
                         less = sum;
                         matched = match[i];
