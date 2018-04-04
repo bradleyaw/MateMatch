@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Mate Match</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>Mate Match</h1>
+    <h2>G'day Mate! Take our survey to find a friend matches your personality.</h2>
+    <form>
+        <div class="question">
+            <label for="name">Name?</label>
+            <input type="text" class="nameInput">
+        </div>
+        <div class="question">
+            <label for="link">Self Portrait Link</label>
+            <input type="text" class="linkInput">
+
+        </div>
+        <div class="question">
+            <label for="1">Q1</label>
+            <select name="1" class="1Input">
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (on the fence)</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </div>
+        <div class="question">
+            <label for="2">Q2</label>
+            <select name="2" class="2Input">
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (on the fence)</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </div>
+        <div class="question">
+            <label for="2">Q3</label>
+            <select name="2" class="3Input">
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (on the fence)</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </div>
+        <div class="question">
+            <label for="2">Q4</label>
+            <select name="2" class="4Input">
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (on the fence)</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </div>
+        <div class="question">
+            <label for="2">Q5</label>
+            <select name="2" class="5Input">
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (on the fence)</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </div>
+        <div class="question">
+            <label for="2">Q6</label>
+            <select name="2" class="6Input">
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (on the fence)</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </div>
+        <div class="question">
+            <label for="2">Q7</label>
+            <select name="2" class="7Input">
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (on the fence)</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </div>
+        <div class="question">
+            <label for="2">Q8</label>
+            <select name="2" class="8Input">
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (on the fence)</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </div>
+        <div class="question">
+            <label for="2">Q9</label>
+            <select name="2" class="9Input">
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (on the fence)</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </div>
+        <div class="question">
+            <label for="2">Q10</label>
+            <select name="2" class="10Input">
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (on the fence)</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <button type="submit" class="submit">Find my Mate!</button>
+    </form>
+    <a href="/api/friends">API Friends List</a>
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Your Best Match!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2 class="matchName"></h2>
+                    <img class="matchPhoto" src="" alt="Match Photo" width="450px">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+        var matched;
+        $(".submit").on("click", function (event) {
+            event.preventDefault();
+            var friend = {
+                name: $(".nameInput").val().trim(),
+                photo: $(".linkInput").val().trim(),
+                scores: [
+                    $(".1Input").val(),
+                    $(".2Input").val(),
+                    $(".3Input").val(),
+                    $(".4Input").val(),
+                    $(".5Input").val(),
+                    $(".6Input").val(),
+                    $(".7Input").val(),
+                    $(".8Input").val(),
+                    $(".9Input").val(),
+                    $(".10Input").val()
+                ]
+            }
+
+            $.post("api/friends", friend, function () {
+                //var html = "<h2> Name: " + scoreArr[0].name + "</h2>";
+                //html += "<img src='" + scoreArr[0].photo + "' alt='Match Photo'";
+            })
+            $.get("api/friends", function (match) {
+                var less = 41;
+                console.log(match);
+                for (var i = 0; i < match.length - 1; i++) {
+                    var sum = 0;
+                    for (var j = 0; j < match[i].scores.length; j++) {
+                        sum += Math.abs(friend.scores[j] - match[i].scores[j]);
+                    }
+                    console.log(sum)
+                    if (sum <= less) {
+                        less = sum;
+                        matched = match[i];
+                    }
+                }
+            }).then(function() {
+                $(".matchName").text(matched.name);
+                $(".matchPhoto").attr("src", matched.photo);
+
+                // Show the modal with the best match
+                $(".modal").modal("toggle");
+            })
+
+        })
+    </script>
+</body>
+
+</html>
