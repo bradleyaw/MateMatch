@@ -4,132 +4,189 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Mate Match</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #EEE;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #111;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-weight: 100;
+            text-align: center;
+            margin: 10px;
+        }
+
+        a {
+            margin: 5px;
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .container {
+            margin: auto;
+            text-align: left;
+            background-color: white;
+            padding: 15px;
+        }
+
+        .question {
+            display: block;
+            margin: 20px 20%;
+        }
+
+        .input {
+            padding: 5px 11px;
+        }
+
+        .submit {
+            margin: 10px;
+        }
+
+        .photoLink {
+            margin: 0px;
+        }
+
+        .required {
+            color: gray;
+            font-size: .8rem;
+            margin: 2px 0px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Mate Match</h1>
-    <h2>G'day Mate! Take our survey to find a friend matches your personality.</h2>
-    <form>
-        <div class="question">
-            <label for="name">Name?</label>
-            <input type="text" class="nameInput">
-        </div>
-        <div class="question">
-            <label for="link">Self Portrait Link</label>
-            <input type="text" class="linkInput">
+        <h1>Mate Match</h1>
+        <h2>G'day Mate! Take our survey to find a friend matches your personality.</h2>
+        <div class="container">
 
-        </div>
-        <div class="question">
-            <label for="1">You prefer to team sports to solo sports</label>
-            <select name="1" class="1Input">
-                <option value="1">1 (strongly disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3 (on the fence)</option>
-                <option value="4">4</option>
-                <option value="5">5 (strongly agree)</option>
-            </select>
-        </div>
-        <div class="question">
-            <label for="2">After a day of work/school, you prefer to be alone</label>
-            <select name="2" class="2Input">
-                <option value="1">1 (strongly disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3 (on the fence)</option>
-                <option value="4">4</option>
-                <option value="5">5 (strongly agree)</option>
-            </select>
-        </div>
-        <div class="question">
-            <label for="2">Given the opportunity, you call someone out for wronging another person</label>
-            <select name="2" class="3Input">
-                <option value="1">1 (strongly disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3 (on the fence)</option>
-                <option value="4">4</option>
-                <option value="5">5 (strongly agree)</option>
-            </select>
-        </div>
-        <div class="question">
-            <label for="2">You are a rule follower</label>
-            <select name="2" class="4Input">
-                <option value="1">1 (strongly disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3 (on the fence)</option>
-                <option value="4">4</option>
-                <option value="5">5 (strongly agree)</option>
-            </select>
-        </div>
-        <div class="question">
-            <label for="2">I spend the majority of my time being happy</label>
-            <select name="2" class="5Input">
-                <option value="1">1 (strongly disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3 (on the fence)</option>
-                <option value="4">4</option>
-                <option value="5">5 (strongly agree)</option>
-            </select>
-        </div>
-        <div class="question">
-            <label for="2">I always try to be me and not put on a front</label>
-            <select name="2" class="6Input">
-                <option value="1">1 (strongly disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3 (on the fence)</option>
-                <option value="4">4</option>
-                <option value="5">5 (strongly agree)</option>
-            </select>
-        </div>
-        <div class="question">
-            <label for="2">In a group setting, you like to take charge</label>
-            <select name="2" class="7Input">
-                <option value="1">1 (strongly disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3 (on the fence)</option>
-                <option value="4">4</option>
-                <option value="5">5 (strongly agree)</option>
-            </select>
-        </div>
-        <div class="question">
-            <label for="2">I consider myself a realist</label>
-            <select name="2" class="8Input">
-                <option value="1">1 (strongly disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3 (on the fence)</option>
-                <option value="4">4</option>
-                <option value="5">5 (strongly agree)</option>
-            </select>
-        </div>
-        <div class="question">
-            <label for="2">Honesty is the best policy</label>
-            <select name="2" class="9Input">
-                <option value="1">1 (strongly disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3 (on the fence)</option>
-                <option value="4">4</option>
-                <option value="5">5 (strongly agree)</option>
-            </select>
-        </div>
-        <div class="question">
-            <label for="2">I love Duke Basketball</label>
-            <select name="2" class="10Input">
-                <option value="1">1 (strongly disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3 (on the fence)</option>
-                <option value="4">4</option>
-                <option value="5">5 (strongly agree)</option>
-            </select>
-        </div>
-        <br>
-        <br>
-        <button type="submit" class="submit">Find my Mate!</button>
-    </form>
-    <a href="/api/friends">API Friends List</a>
-    <a href="/https://github.com/bradleyaw/MateMatch">Github Repository</a>
-    
+        <form>
+            <h3>Basic Information</h3>
+            <div class="question">
+                <label for="name">Name</label>
+                <input type="text" class="nameInput">
+            </div>
+            <div class="question">
+                <label for="link" class="photoLink">Self Portrait Link</label>
+                <label class="required">direct image link required(i.e. file ending in .jpg)</label>
+                <input type="text" class="linkInput">
+
+            </div>
+            <h3>Personality Questions</h3>
+            <div class="question">
+                <label for="1">I prefer team sports to solo sports</label>
+                <select name="1" class="1Input input">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3 (on the fence)</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="2">I love Duke Basketball</label>
+                <select name="2" class="2Input input">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3 (on the fence)</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="2">Given the opportunity, I would call someone out for wronging another person</label>
+                <select name="2" class="3Input input">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3 (on the fence)</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="2">I am a rule follower</label>
+                <select name="2" class="4Input input">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3 (on the fence)</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="2">I spend the majority of my time being happy</label>
+                <select name="2" class="5Input input">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3 (on the fence)</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="2">Honesty is the best policy</label>
+                <select name="2" class="6Input input">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3 (on the fence)</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="2">After a day of work/school, you prefer to be alone</label>
+                <select name="2" class="7Input input">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3 (on the fence)</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="2">I consider myself a realist</label>
+                <select name="2" class="8Input input">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3 (on the fence)</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="2">In a group setting, you like to take charge</label>
+                <select name="2" class="9Input input">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3 (on the fence)</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="2">I always try to be me and not put on a front</label>
+                <select name="2" class="10Input input">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3 (on the fence)</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <button type="submit" class="submit">Find my Mate!</button>
+        </form>
+        <a href="/api/friends">API Friends List</a>
+        <a href="/https://github.com/bradleyaw/MateMatch">Github Repository</a>
+    </div>
     <div class="modal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -179,7 +236,7 @@
             }
 
             $.post("api/friends", friend)
-            
+
             $.get("api/friends", function (match) {
                 var less = 41;
                 for (var i = 0; i < match.length - 1; i++) {
@@ -192,7 +249,7 @@
                         matched = match[i];
                     }
                 }
-            }).then(function() {
+            }).then(function () {
                 $(".matchName").text(matched.name);
                 $(".matchPhoto").attr("src", matched.photo);
 
